@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tap TV Remote App Review Demo</title>
+  <meta name="robots" content="noindex">
+  <style>
+    :root {
+      color-scheme: light;
+      --background: #f7f4ed;
+      --surface: #ffffff;
+      --text: #17211b;
+      --muted: #5c665f;
+      --border: #ddd5c8;
+      --accent: #0f766e;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--background);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    main {
+      width: min(1040px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    p {
+      max-width: 760px;
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .video-shell {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface);
+      box-shadow: 0 16px 48px rgba(23, 33, 27, 0.12);
+    }
+
+    video {
+      display: block;
+      width: 100%;
+      max-height: 78vh;
+      background: #000000;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.18em;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Tap TV Remote App Review Demo</h1>
+    <p>
+      This video shows the current app running on a physical Apple device, connecting to designated TV hardware,
+      and completing the core remote-control workflow.
+    </p>
+    <div class="video-shell">
+      <video controls preload="metadata" playsinline>
+        <source src="app_store_review.mp4" type="video/mp4">
+        Your browser does not support the video tag. Use the direct MP4 link below.
+      </video>
+    </div>
+    <div class="links">
+      <a href="app_store_review.mp4">Direct MP4 link</a>
+    </div>
+  </main>
+</body>
+</html>
